@@ -1,18 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuardPatrol : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
 	public Transform guardTransform;
+
+	public enum State
+	{
+		STATIC,
+		PATROLLING,
+		RANDOM
+	}	
+
 	public float patrolSpeed = 2f;
-
 	public List<GameObject> patrolPoints = new List<GameObject>();
-
 	private int currentPatrolIndex = 0;
+	public State currentState;
 
 	void Update()
 	{
-		Patrol();
+		if(currentState == State.PATROLLING)
+		{
+			Patrol();
+		}
 	}
 
 	void Patrol()
