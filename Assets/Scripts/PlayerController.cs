@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,9 +10,24 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Animator animator;
 
+    [SerializeField]
+    private InputActionReference movement, attack;
+
+    private Vector2 movementInput;
+
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
+    }
+
+    private void OnEnable()
+    {
+        attack.action.performed += PerformAttack;
+    }
+
+    private void OnDisable()
+    {
+        attack.action.performed -= PerformAttack;
     }
 
     public void Update()
@@ -25,22 +41,27 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
+    private void PerformAttack(InputAction.CallbackContext obj)
+    {
+        animator.SetTrigger("Attack");
+    }
+
     void ProcessInputs()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        movementInput = movement.action.ReadValue<Vector2>();
 
-        if (moveDirection != Vector2.zero) // Check if there is movement
+        moveDirection = movementInput.normalized;
+
+        if (moveDirection != Vector2.zero)
         {
-            lastMoveDirection = moveDirection; // Update the last move direction
+            lastMoveDirection = moveDirection;
         }
     }
 
     void Move()
     {
-        if (moveDirection != Vector2.zero) // Check if the character is moving
+        if (moveDirection != Vector2.zero)
         {
             isMoving = true;
             rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
@@ -48,7 +69,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             isMoving = false;
-            rb.velocity = Vector2.zero; // Stop the character
+            rb.velocity = Vector2.zero;
         }
     }
 
