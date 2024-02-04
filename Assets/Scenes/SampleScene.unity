@@ -2230,6 +2230,68 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &845664789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 845664791}
+  - component: {fileID: 845664790}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &845664790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845664789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerInput
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!4 &845664791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845664789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &850924491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,13 +2491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf5db376cf586f45be1a060e2a9f310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guardTransform: {fileID: 1040736269}
-  patrolSpeed: 2
-  patrolPoints:
-  - {fileID: 898169252}
-  - {fileID: 850924491}
-  - {fileID: 229275495}
-  - {fileID: 1488030438}
 --- !u!50 &1040736267
 Rigidbody2D:
   serializedVersion: 4
@@ -2797,6 +2852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1396347360}
+  movement: {fileID: -9005729344199167388, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
+  attack: {fileID: -4989789961196313019, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
 --- !u!95 &1396347364
 Animator:
   serializedVersion: 5
@@ -5029,3 +5086,4 @@ SceneRoots:
   - {fileID: 1488030439}
   - {fileID: 229275496}
   - {fileID: 5449692144044920226}
+  - {fileID: 845664791}
