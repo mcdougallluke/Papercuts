@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,7 +12,13 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Animator animator;
 
-    private void Awake()
+	[SerializeField]
+	private InputActionReference movement, attack;
+
+	private Vector2 movementInput;
+
+
+	private void Awake()
     {
         animator = GetComponent<Animator>();
 
@@ -20,32 +26,45 @@ public class PlayerController : MonoBehaviour
         equippedRangedWeapon.transform.position = transform.position;
     }
 
-    public void Update()
+	private void OnEnable()
+	{
+		attack.action.performed += PerformAttack;
+	}
+
+	private void OnDisable()
+	{
+		attack.action.performed -= PerformAttack;
+	}
+
+	public void Update()
+	{
+		ProcessInputs();
+		Animate();
+	}
+
+	private void FixedUpdate()
+	{
+		Move();
+	}
+
+	private void PerformAttack(InputAction.CallbackContext obj)
+	{
+		animator.SetTrigger("Attack");
+	}
+
+	void ProcessInputs()
     {
-        ProcessInputs();
-        Animate();
-    }
+		movementInput = movement.action.ReadValue<Vector2>();
 
-    private void FixedUpdate()
-    {
-        Move();
-    }
+		moveDirection = movementInput.normalized;
 
-    void ProcessInputs()
-    {
-        //Movement inputs
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+		if (moveDirection != Vector2.zero)
+		{
+			lastMoveDirection = moveDirection;
+		}
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
-
-        if (moveDirection != Vector2.zero) // Check if there is movement
-        {
-            lastMoveDirection = moveDirection; // Update the last move direction
-        }
-
-        //Drop weapon
-        if (Input.GetKeyDown(KeyCode.Q)) 
+		//Drop weapon
+		if (Input.GetKeyDown(KeyCode.Q)) 
         {
             if (!equippedRangedWeapon.IsUnityNull())
             {
