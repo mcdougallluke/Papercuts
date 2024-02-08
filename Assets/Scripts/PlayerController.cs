@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
 			weaponInHand.transform.SetParent(null);
 			weaponInHand.GetComponent<SpriteRenderer>().sortingOrder = this.GetComponent<SpriteRenderer>().sortingOrder - 1;
 			weaponInHand.transform.rotation = Quaternion.Euler(0, 0, -90);
+			equippedWeapons[currWeaponIndex] = null;
 			weaponInHand.isEquipped = false;
 			weaponInHand = null;
 		}
