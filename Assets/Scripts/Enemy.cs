@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
 {
 	public Transform guardTransform;
 
+	[SerializeField] float health, maxHealth = 100f;
+	[SerializeField] HealthBar healthBar;
+
 	public enum State
 	{
 		STATIC,
@@ -17,12 +20,26 @@ public class Enemy : MonoBehaviour
 	private int currentPatrolIndex = 0;
 	public State currentState;
 
+	private void Awake()
+	{
+		healthBar = GetComponentInChildren<HealthBar>();
+		Debug.Log(healthBar.ToString());
+	}
+	public void TakeDamage(float damage)
+	{
+		health -= damage;
+
+		healthBar.UpdateHealthBar(health, maxHealth);
+	}
+
 	void Update()
 	{
+		/*
 		if(currentState == State.PATROLLING)
 		{
 			Patrol();
 		}
+		*/
 	}
 
 	void Patrol()
