@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Firearm
+  - Character
+  - Damaging
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Enemy
   - SolidObjects
   - 
   - 
@@ -50,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3009931179
+    locked: 0
+  - name: Enemy
+    uniqueID: 61545575
     locked: 0
