@@ -20,17 +20,21 @@ public class Bullet : MonoBehaviour
 		Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 		spriteRenderer.sprite = newSprite;
 	}
-	private void OnCollisionEnter2D(Collision2D collision)
+	private void OnTriggerEnter2D(Collider2D other)
 	{
-	    Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        if (enemy != null)
-        {
-            Debug.Log(enemy.ToString());
-            enemy.TakeDamage(25f);
-        }
+		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+		{
+			Enemy enemy = other.gameObject.GetComponent<Enemy>();
+			enemy.TakeDamage(25f);
 
-        Destroy(clone);
+			Destroy(clone);
+		}
+		else if (other.gameObject.layer == LayerMask.NameToLayer("SolidObjects"))
+		{
+			// Do something if it's a wall (e.g., destroy the bullet)
+			Destroy(clone);
+		}
 	}
 
 	void Update()
