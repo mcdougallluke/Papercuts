@@ -22,11 +22,11 @@ public class AutoProximityPickUp : MonoBehaviour
 
     void PickUp(GameObject Paper)
     {
-        if (Paper != null)
+        if (Paper != null && Paper.CompareTag("Paper"))
         {
             Paper.SetActive(false); // Remove paper object from scene
             paperCount++; // Add paper to inventory
-            //Debug.Log("Picked up a paper. Total papers: " + paperCount); //Print to console
+            Debug.Log("Picked up a paper. Total papers: " + paperCount); //Print to console
         }
     }
 

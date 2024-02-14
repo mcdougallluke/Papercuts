@@ -7,6 +7,8 @@ TagManager:
   - Firearm
   - Character
   - Damaging
+  - Fax Machine
+  - Paper
   layers:
   - Default
   - TransparentFX
