@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class AutoProximityPickUp : MonoBehaviour
 {
-    public float pickUpRadius = 1.25f;
+    public float pickUpRadius = 1.75f;
     public LayerMask whatIsPaper;
+    public int paperCount { get; private set; } = 0;
+
 
     void Update()
     {
@@ -23,7 +25,8 @@ public class AutoProximityPickUp : MonoBehaviour
         if (Paper != null)
         {
             Paper.SetActive(false); // Remove paper object from scene
-            // Add paper to inventory
+            paperCount++; // Add paper to inventory
+            //Debug.Log("Picked up a paper. Total papers: " + paperCount); //Print to console
         }
     }
 
