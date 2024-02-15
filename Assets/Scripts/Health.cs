@@ -1,17 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    private int currentHealth, maxHealth;
+    [SerializeField] int currentHealth = 100;
+    [SerializeField] int maxHealth = 100;
+    [SerializeField] StatusBar healthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     [SerializeField]
     private bool isDead = false;
+
+    private void Awake()
+    {
+        healthBar = GetComponentInChildren<StatusBar>();
+    }
 
     public void InitializeHealth(int healthValue)
     {
@@ -20,14 +24,15 @@ public class Health : MonoBehaviour
         isDead = false;
     }
 
-    public void GetHit(int amount, GameObject sender)
+    public void GetHit(int dmgAmount, GameObject sender)
     {
         if (isDead)
             return;
         if (sender.layer == gameObject.layer)
             return;
 
-        currentHealth -= amount;
+        currentHealth = Mathf.Clamp(currentHealth - dmgAmount, 0, maxHealth);
+        healthBar.UpdateStatusBar(currentHealth, maxHealth);
 
         if (currentHealth > 0)
         {

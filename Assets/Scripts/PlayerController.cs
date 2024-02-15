@@ -6,8 +6,12 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] float health, maxHealth = 100f;
-	[SerializeField] HealthBar healthBar;
+	[SerializeField] int currHealth = 100;
+	[SerializeField] int maxHealth = 100;
+	[SerializeField] int currStamina = 100;
+	[SerializeField] int maxStamina = 100;
+	[SerializeField] StatusBar healthBar;
+	[SerializeField] StatusBar staminaBar;
 
 	public Weapon[] equippedWeapons = new Weapon[2];
 	public Weapon weaponInHand = null;
@@ -15,6 +19,10 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 	public float moveSpeed;
+	private float baseSpeed;
+	private Boolean decreaseStamina = false;
+	private Boolean regenStamina = false;
+
 	private Vector2 moveDirection;
     private Vector2 lastMoveDirection = Vector2.down;
     private bool isMoving;
@@ -29,7 +37,11 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
     {
         animator = GetComponent<Animator>();
-		healthBar = GetComponentInChildren<HealthBar>();
+
+		baseSpeed = moveSpeed;
+
+		healthBar.UpdateStatusBar(currHealth, maxHealth);
+		staminaBar.UpdateStatusBar(currStamina, maxStamina);
 
 		try
 		{
@@ -61,17 +73,23 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		if (!regenStamina & !decreaseStamina & (currStamina < maxStamina))
+		{
+			regenStamina = true;
+			InvokeRepeating("RegenStamina", 1f, 0.5f);
+		}
+
 		Move();
 	}
 
-	public void TakeDamage(float damage)
+	public void TakeDamage(int damage)
 	{
-		health -= damage;
+		currHealth -= damage;
 
-		healthBar.UpdateHealthBar(health, maxHealth);
+		healthBar.UpdateStatusBar(currHealth, maxHealth);
 
 		//TODO: Game over screen
-		if ( health <= 0 ) {}
+		if ( currHealth <= 0 ) {}
 	}
 	private void PerformAttack(InputAction.CallbackContext obj)
 	{
@@ -93,6 +111,44 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private void DecreaseStamina()
+	{
+        currStamina = Mathf.Clamp((currStamina - 20), 0, maxStamina);
+
+        staminaBar.UpdateStatusBar(currStamina, maxStamina);
+
+
+		if (currStamina <= 0 )
+		{
+			StopStaminaDecrease();
+		}
+	}
+
+	private void RegenStamina()
+	{
+		currStamina = Mathf.Clamp((currStamina + 20), 0, maxStamina);
+		staminaBar.UpdateStatusBar(currStamina, maxStamina);
+
+		if (currStamina == 100 || decreaseStamina)
+		{
+			StopStaminaRegen();
+		}
+	}
+
+	private void StopStaminaDecrease()
+	{
+        decreaseStamina = false;
+		CancelInvoke("DecreaseStamina");
+
+		moveSpeed = baseSpeed;
+	}
+
+	private void StopStaminaRegen()
+	{
+		CancelInvoke("RegenStamina");
+		regenStamina = false;
+	}
+
 	void ProcessInputs()
     {
 		movementInput = movement.action.ReadValue<Vector2>();
@@ -104,12 +160,29 @@ public class PlayerController : MonoBehaviour
 			lastMoveDirection = moveDirection;
 		}
 
+		//Sprint toggle
+		if (Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			if (currStamina > 0)
+			{
+                decreaseStamina = true;
+                InvokeRepeating("DecreaseStamina", 1f, 0.45f);
+                moveSpeed = baseSpeed * 1.5f;
+			}
+		}
+
+		if (Input.GetKeyUp(KeyCode.LeftShift))
+		{
+			StopStaminaDecrease();
+		}
+
 		//Drop weapon
 		if (Input.GetKeyDown(KeyCode.Q)) 
         {
 			DropWeapon();
         }
 
+		//Attack
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			if (weaponInHand != null)

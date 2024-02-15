@@ -20,8 +20,9 @@ public class FaxMachine : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Paper Count: {playerScript.paperCount}, Threshold: {paperThreshold}");
-        Debug.Log("Time Remaining: " + countdown);
+        //Debug.Log($"Paper Count: {playerScript.paperCount}, Threshold: {paperThreshold}");
+        //Debug.Log("Time Remaining: " + countdown);
+
         // Check if player is close enough and has more than x papers
         if (isPlayerClose && playerScript.paperCount > paperThreshold && !isFaxing)
         {

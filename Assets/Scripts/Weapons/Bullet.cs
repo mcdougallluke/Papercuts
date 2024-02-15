@@ -25,8 +25,10 @@ public class Bullet : MonoBehaviour
 
 		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
 		{
-			Enemy enemy = other.gameObject.GetComponent<Enemy>();
-			enemy.TakeDamage(25f);
+			Health enemyHealth = other.gameObject.GetComponent<Health>();
+
+            //Apply damage to enemy
+            enemyHealth?.GetHit(25, this.gameObject);
 
 			Destroy(clone);
 		}
