@@ -5,7 +5,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int currentHealth = 100;
     [SerializeField] int maxHealth = 100;
-    [SerializeField] StatusBar healthBar;
+    private StatusBar healthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
@@ -26,7 +26,6 @@ public class Health : MonoBehaviour
 
     public void GetHit(int dmgAmount, GameObject sender)
     {
-        Debug.Log("HIT");
         if (isDead)
             return;
         if (sender.layer == gameObject.layer)

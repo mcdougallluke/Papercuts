@@ -7,13 +7,15 @@ public class Bullet : MonoBehaviour
     public Vector2 direction { get; set; }
     private float time = 0f;
     public GameObject clone = null;
+    private int dmgAmount = 0;
 
-    public void Initialize(float speed, Vector2 direction, Texture2D texture, GameObject clone)
+    public void Initialize(int dmg, float speed, Vector2 direction, Texture2D texture, GameObject clone)
     {
         //Sets speed and direction
         this.speed = speed;
         this.direction = direction;
         this.clone = clone;
+        this.dmgAmount = dmg;
 
         //Assigns texture
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
@@ -28,7 +30,7 @@ public class Bullet : MonoBehaviour
 			Health enemyHealth = other.gameObject.GetComponent<Health>();
 
             //Apply damage to enemy
-            enemyHealth?.GetHit(25, this.gameObject);
+            enemyHealth?.GetHit(dmgAmount, this.gameObject);
 
 			Destroy(clone);
 		}
