@@ -9,7 +9,9 @@ public class FaxMachine : MonoBehaviour
     private float countdown = 12f; // 12 second countdown
     private float resetCountDown = 12f;
     private bool isFaxing = false;
-    private int paperThreshold = 45;
+
+    [SerializeField]
+    public int paperThreshold = 45;
 
     void Start()
     {
