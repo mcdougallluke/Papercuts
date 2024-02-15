@@ -3,8 +3,8 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int currentHealth = 100;
-    [SerializeField] int maxHealth = 100;
+    [SerializeField] int currentHealth = 10;
+    [SerializeField] int maxHealth = 10;
     private StatusBar healthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
@@ -32,7 +32,11 @@ public class Health : MonoBehaviour
             return;
 
         currentHealth = Mathf.Clamp(currentHealth - dmgAmount, 0, maxHealth);
-        healthBar.UpdateStatusBar(currentHealth, maxHealth);
+
+        if (healthBar != null)
+        {
+            healthBar.UpdateStatusBar(currentHealth, maxHealth);
+        }
 
         if (currentHealth > 0)
         {
@@ -45,4 +49,5 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
