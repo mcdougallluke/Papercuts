@@ -7,6 +7,8 @@ TagManager:
   - Firearm
   - Character
   - Damaging
+  - Fax Machine
+  - Paper
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - Enemy
   - SolidObjects
-  - 
+  - Player Bullets
   - 
   - 
   - 
@@ -50,9 +52,15 @@ TagManager:
   - name: Foreground
     uniqueID: 2462256699
     locked: 0
+  - name: Floating
+    uniqueID: 1323722689
+    locked: 0
   - name: Player
     uniqueID: 3009931179
     locked: 0
   - name: Enemy
     uniqueID: 61545575
+    locked: 0
+  - name: UI
+    uniqueID: 149922233
     locked: 0

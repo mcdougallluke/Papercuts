@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5265638237445943113}
   - component: {fileID: 4259570951073995131}
   - component: {fileID: 7594779584555150857}
-  m_Layer: 0
-  m_Name: Bullet Prefab
-  m_TagString: Untagged
+  - component: {fileID: -2922440736281503830}
+  m_Layer: 8
+  m_Name: Player Bullet Prefab
+  m_TagString: Damaging
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,8 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d944cc13d8205048b8679daccb5cf4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 0, y: 0}
+  clone: {fileID: 0}
 --- !u!212 &7594779584555150857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1832710597
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -658353261, guid: 06f2418054fe5014da2df78e2678a3f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,3 +99,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &-2922440736281503830
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384652202498413923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
