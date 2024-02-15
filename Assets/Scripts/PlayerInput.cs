@@ -15,9 +15,11 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        OnMovementInput?.Invoke(movement.action.ReadValue<Vector2>().normalized);
+        Vector2 input = movement.action.ReadValue<Vector2>().normalized;
+        OnMovementInput?.Invoke(input);
         OnPointerInput?.Invoke(GetPointerInput());
     }
+
 
     private Vector2 GetPointerInput()
     {
