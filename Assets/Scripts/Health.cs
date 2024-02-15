@@ -5,7 +5,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int currentHealth = 100;
     [SerializeField] int maxHealth = 100;
-    [SerializeField] StatusBar healthBar;
+    private StatusBar healthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 

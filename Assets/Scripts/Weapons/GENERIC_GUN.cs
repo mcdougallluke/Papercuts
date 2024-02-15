@@ -6,6 +6,8 @@ public class GENERIC_GUN : Weapon
 	public GameObject bulletPrefab;
 	public float bulletSpeed = 8f;
 
+	private int damage = 25;
+
 	// Update is called once per frame
 	void Update()
     {
@@ -33,7 +35,7 @@ public class GENERIC_GUN : Weapon
 		Bullet bulletScript = newBullet.GetComponent<Bullet>();
 
 		// Set the texture, direction, and  speed for the bullet
-		bulletScript.Initialize(bulletSpeed, bulletDirectionVec.normalized, bulletTexture, bulletScript.gameObject);
+		bulletScript.Initialize(damage, bulletSpeed, bulletDirectionVec.normalized, bulletTexture, bulletScript.gameObject);
 		
 	}
 }

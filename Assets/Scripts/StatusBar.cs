@@ -5,8 +5,13 @@ public class StatusBar : MonoBehaviour
 {
 	public enum StatusBarType { HEALTH, STAMINA }
 
-	[SerializeField] private Slider slider;
 	[SerializeField] public StatusBarType type;
+	private Slider slider;
+
+	private void Awake() 
+	{
+		slider = GetComponentInChildren<Slider>();
+	}
 
 	public void UpdateStatusBar(float currentVal, float maxVal)
 	{
