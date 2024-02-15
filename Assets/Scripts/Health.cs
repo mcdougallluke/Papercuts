@@ -15,7 +15,6 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        // If you're still using StatusBar for other purposes, keep this line; otherwise, it can be removed.
         // Initialize healthSlider properties in Awake or Start as needed
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
@@ -52,8 +51,6 @@ public class Health : MonoBehaviour
             {
                 OnDeathWithReference?.Invoke(sender);
                 isDead = true;
-                // Consider disabling the game object instead of destroying it, depending on your game's needs
-                // Destroy(gameObject);
                 gameObject.SetActive(false); // An alternative to destroying the object
             }
         }
