@@ -20,6 +20,7 @@ public class Agent : MonoBehaviour
     private void Update()
     {
         agentMover.MovementInput = MovementInput;
+        weaponParent.PointerPosition = pointerInput;
         AnimateCharacter();
     }
 

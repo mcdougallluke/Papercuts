@@ -12,18 +12,29 @@ public class WeaponParent : MonoBehaviour
     public float delay = 0.3f;
     private bool attackBlocked;
 
+    public bool IsAttacking { get; private set; }
+
     public Transform circleOrigin;
     public float radius;
 
+    public void ResetIsAttacking()
+    {
+        IsAttacking = false;
+    }
+
     private void Update()
     {
+        if (IsAttacking)
+            return;
         Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
         transform.right = direction;
+
         Vector2 scale = transform.localScale;
         if (direction.x < 0)
         {
             scale.y = -1;
-        } else if (direction.x > 0)
+        }
+        else if (direction.x > 0)
         {
             scale.y = 1;
         }
@@ -32,7 +43,8 @@ public class WeaponParent : MonoBehaviour
         if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
-        } else
+        }
+        else
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
         }
@@ -41,10 +53,9 @@ public class WeaponParent : MonoBehaviour
     public void Attack()
     {
         if (attackBlocked)
-        {
             return;
-        }
         animator.SetTrigger("Attack");
+        IsAttacking = true;
         attackBlocked = true;
         StartCoroutine(DelayAttack());
     }
@@ -66,8 +77,12 @@ public class WeaponParent : MonoBehaviour
     {
         foreach (Collider2D collider in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
         {
-            Debug.Log(collider.name);
+            //Debug.Log(collider.name);
+            Health health;
+            if (health = collider.GetComponent<Health>())
+            {
+                health.GetHit(1, transform.parent.gameObject);
+            }
         }
     }
-
 }
