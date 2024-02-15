@@ -9,26 +9,15 @@ public class Agent : MonoBehaviour
     private AgentAnimations agentAnimations;
     private AgentMover agentMover;
 
-    private WeaponParent weaponParent;
-
     private Vector2 pointerInput, movementInput;
+    private WeaponParent weaponParent;
 
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
 
-    private void Update()
-    {
-        //pointerInput = GetPointerInput();
-        //movementInput = movement.action.ReadValue<Vector2>().normalized;
-
-        agentMover.MovementInput = MovementInput;
-        //weaponParent.PointerPosition = pointerInput;
-        AnimateCharacter();
-    }
-
     public void PerformAttack()
     {
-        //weaponParent.Attack();
+        weaponParent.Attack();
     }
 
     private void Awake()
@@ -40,11 +29,18 @@ public class Agent : MonoBehaviour
 
     private void AnimateCharacter()
     {
-        //Vector2 lookDirection = pointerInput - (Vector2)transform.position;
-        //agentAnimations.RotateToPointer(lookDirection);
-        //agentAnimations.PlayAnimation(MovementInput);
+        Vector2 lookDirection = pointerInput - (Vector2)transform.position;
+        agentAnimations.RotateToPointer(lookDirection);
+        agentAnimations.PlayAnimation(movementInput);
     }
 
+    private void Update()
+    {
+        //pointerInput = GetPointerInput();
+        //movementInput = movement.action.ReadValue<Vector2>().normalized;
 
-
+        agentMover.MovementInput = movementInput;
+        weaponParent.PointerPosition = pointerInput;
+        AnimateCharacter();
+    }
 }
