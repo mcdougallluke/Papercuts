@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 	public Weapon[] equippedWeapons = new Weapon[2];
 	
 	public Weapon weaponInHand = null;
-	public Weapon melee = null;
 	public int currWeaponIndex = 0;
 
     public Rigidbody2D rb;
@@ -54,10 +53,7 @@ public class PlayerController : MonoBehaviour
 			equippedWeapons[0].transform.SetParent(transform, false);
 			equippedWeapons[0].transform.position = transform.position;
 			weaponInHand = equippedWeapons[0];
-		} catch (System.Exception)
-		{
-			//Occurs when no weapon in hand
-		} 
+		} catch (System.Exception) {} 
     }
 
 	private void OnEnable()
@@ -197,12 +193,7 @@ public class PlayerController : MonoBehaviour
 		//Attack
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
-			if (weaponInHand != null)
-			{
-				weaponInHand.Attack();
-			} else {
-				melee?.Attack();
-			}
+			weaponInHand?.Attack();
 		}
 		
 		//Change weapon

@@ -1,9 +1,11 @@
 using UnityEngine;
 
+
 public class Weapon : MonoBehaviour
 {
 	public GameObject myGameObject = null;
 	public PlayerController player;
+	protected Vector3 barrelTipPosition;
 	public bool isEquipped = false;
 
 	/*
@@ -11,16 +13,23 @@ public class Weapon : MonoBehaviour
 	 */
 	virtual public void Attack() {}
 
+	public void Awake() 
+	{
+		barrelTipPosition = GetComponentInChildren<BulletTipMarker>().transform.position;
+
+		if (barrelTipPosition == null) barrelTipPosition = transform.position;
+	}
+
 	protected void DetectWeaponPickup()
 	{	
-		if (Vector3.Distance(this.transform.position, player.transform.position) > 2) return;
+		if (Vector3.Distance(transform.position, player.transform.position) > 2) return;
 		
 		//Detect if player picking up weapon
 		if (Input.GetKeyDown(KeyCode.E))
 		{
-			this.transform.SetParent(player.transform, false);
-			this.transform.position = player.transform.position;
-			this.GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
+			transform.SetParent(player.transform, false);
+			transform.position = player.transform.position;
+			GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
 
 
 			//Check if player holding wepaon
@@ -44,8 +53,8 @@ public class Weapon : MonoBehaviour
 	{
 		//Rotate sprite to point at cursor
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector3 direction = worldPos - transform.position;
+		Vector3 direction = worldPos - barrelTipPosition;
 		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
+		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 	}
 }

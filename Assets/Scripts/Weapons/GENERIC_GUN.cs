@@ -9,7 +9,7 @@ public class GENERIC_GUN : Weapon
 	private int damage = 25;
 
 	// Update is called once per frame
-	void Update()
+	public void Update()
     {
 		if (!isEquipped)
 		{
