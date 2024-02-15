@@ -1,12 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] int currentHealth = 100;
     [SerializeField] int maxHealth = 100;
-    public Slider healthSlider; // Ensure this is assigned via the Inspector
+    [SerializeField] StatusBar healthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
@@ -15,18 +14,13 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        // Initialize healthSlider properties in Awake or Start as needed
-        healthSlider.maxValue = maxHealth;
-        healthSlider.value = currentHealth;
+        healthBar = GetComponentInChildren<StatusBar>();
     }
 
     public void InitializeHealth(int healthValue)
     {
         currentHealth = healthValue;
-        maxHealth = 100; // Consider using the parameter or a constant value if always 100
-        healthSlider.maxValue = maxHealth; // Ensure slider's max value matches maxHealth
-        healthSlider.value = currentHealth; // Set slider's current value to match health
-
+        maxHealth = healthValue;
         isDead = false;
     }
 
@@ -39,7 +33,7 @@ public class Health : MonoBehaviour
             return;
 
         currentHealth = Mathf.Clamp(currentHealth - dmgAmount, 0, maxHealth);
-        healthSlider.value = currentHealth;
+        healthBar.UpdateStatusBar(currentHealth, maxHealth);
 
         if (currentHealth > 0)
         {
@@ -47,12 +41,9 @@ public class Health : MonoBehaviour
         }
         else
         {
-            if (!isDead) // Check if not already dead to prevent multiple death events
-            {
-                OnDeathWithReference?.Invoke(sender);
-                isDead = true;
-                gameObject.SetActive(false); // An alternative to destroying the object
-            }
+            OnDeathWithReference?.Invoke(sender);
+            isDead = true;
+            Destroy(gameObject);
         }
     }
 }
