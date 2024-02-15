@@ -15,10 +15,10 @@ public class EnemyAI : MonoBehaviour
     private AIData aiData;
 
     [SerializeField]
-    private float detectionDelay = 0.05f, aiUpdateDelay = 0.06f, attackDelay = 1f;
+    private float detectionDelay = 0.05f, aiUpdateDelay = 0.06f, attackDelay = 0.5f;
 
     [SerializeField]
-    private float attackDistance = 0.5f;
+    private float attackDistance = 1f;
 
     //Inputs sent from the Enemy AI to the Enemy controller
     public UnityEvent OnAttackPressed;
