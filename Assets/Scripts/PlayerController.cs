@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 	public int currWeaponIndex = 0;
 
     public Rigidbody2D rb;
+	
 	public float moveSpeed;
 	private float baseSpeed;
 	private Boolean decreaseStamina = false;
@@ -79,21 +80,12 @@ public class PlayerController : MonoBehaviour
 		if (!regenStamina & !decreaseStamina & (currStamina < maxStamina))
 		{
 			regenStamina = true;
-			InvokeRepeating("RegenStamina", 1f, 0.5f);
+			InvokeRepeating("RegenStamina", 0f, 1f);
 		}
 
 		Move();
 	}
 
-	public void TakeDamage(int damage)
-	{
-		currHealth -= damage;
-
-		healthBar.UpdateStatusBar(currHealth, maxHealth);
-
-		//TODO: Game over screen
-		if ( currHealth <= 0 ) {}
-	}
 	private void PerformAttack(InputAction.CallbackContext obj)
 	{
 		animator.SetTrigger("Attack");
@@ -112,6 +104,19 @@ public class PlayerController : MonoBehaviour
 			weaponInHand.isEquipped = false;
 			weaponInHand = null;
 		}
+	}
+
+	/*
+	* Status Bar methods
+	*/
+	public void TakeDamage(int damage)
+	{
+		currHealth -= damage;
+
+		healthBar.UpdateStatusBar(currHealth, maxHealth);
+
+		//TODO: Game over screen
+		if ( currHealth <= 0 ) {}
 	}
 
 	private void DecreaseStamina()
@@ -142,7 +147,6 @@ public class PlayerController : MonoBehaviour
 	{
         decreaseStamina = false;
 		CancelInvoke("DecreaseStamina");
-
 		moveSpeed = baseSpeed;
 	}
 
@@ -152,6 +156,10 @@ public class PlayerController : MonoBehaviour
 		regenStamina = false;
 	}
 
+
+	/*
+	Input processing
+	*/
 	void ProcessInputs()
     {
 		movementInput = movement.action.ReadValue<Vector2>();
@@ -169,7 +177,7 @@ public class PlayerController : MonoBehaviour
 			if (currStamina > 0)
 			{
                 decreaseStamina = true;
-                InvokeRepeating("DecreaseStamina", 1f, 0.45f);
+                InvokeRepeating("DecreaseStamina", 0f, 0.45f);
                 moveSpeed = baseSpeed * 1.5f;
 			}
 		}
