@@ -38,11 +38,14 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-		baseSpeed = moveSpeed;
-
+		//Initiliaze status bars
+		StatusBar[] statusBars = GetComponentsInChildren<StatusBar>();
+		healthBar = (statusBars[0].type == StatusBar.StatusBarType.HEALTH) ? statusBars[0] : statusBars[1];
+		staminaBar = (statusBars[0].type == StatusBar.StatusBarType.STAMINA) ? statusBars[0] : statusBars[1];
 		healthBar.UpdateStatusBar(currHealth, maxHealth);
 		staminaBar.UpdateStatusBar(currStamina, maxStamina);
 
+		baseSpeed = moveSpeed;
 		try
 		{
 			//Try to initialize starter weapon

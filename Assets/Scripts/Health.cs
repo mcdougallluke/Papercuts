@@ -26,6 +26,7 @@ public class Health : MonoBehaviour
 
     public void GetHit(int dmgAmount, GameObject sender)
     {
+        Debug.Log("HIT");
         if (isDead)
             return;
         if (sender.layer == gameObject.layer)
