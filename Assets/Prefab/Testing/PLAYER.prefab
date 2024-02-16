@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39866189a41c41814be7550878ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 10
-  maxHealth: 10
+  currentHealth: 20
+  maxHealth: 20
   OnHitWithReference:
     m_PersistentCalls:
       m_Calls: []
