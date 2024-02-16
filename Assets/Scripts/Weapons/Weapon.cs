@@ -5,7 +5,8 @@ public class Weapon : MonoBehaviour
 {
 	public GameObject myGameObject = null;
 	public PlayerController player;
-	protected Transform barrelTipTransform;
+	public Transform barrelTipTransform;
+	public int ammo = 25;
 	public bool isEquipped = false;
 
 	/*
@@ -19,8 +20,9 @@ public class Weapon : MonoBehaviour
 		
 		barrelTipTransform = GetComponentInChildren<BulletTipMarker>().transform;
 
-		if (barrelTipTransform == null) barrelTipTransform = transform;
+		//if (barrelTipTransform == null) barrelTipTransform = transform;
 	}
+
 
 	protected void DetectWeaponPickup()
 	{	
