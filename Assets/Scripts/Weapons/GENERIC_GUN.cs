@@ -26,6 +26,10 @@ public class GENERIC_GUN : Weapon
 
 	override public void Attack()
 	{
+		if (ammo <= 0) return;
+
+		ammo--;
+
 		//Calculate bullet direction
 		Vector3 bulletDirectionVec = Camera.main.ScreenToWorldPoint(Input.mousePosition) - barrelTipTransform.position;
 
