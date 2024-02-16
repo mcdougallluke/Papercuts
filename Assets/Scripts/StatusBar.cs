@@ -8,7 +8,7 @@ public class StatusBar : MonoBehaviour
 	[SerializeField] public StatusBarType type;
 	private Slider slider;
 
-	private void Awake() 
+	public void Awake() 
 	{
 		slider = GetComponentInChildren<Slider>();
 	}
