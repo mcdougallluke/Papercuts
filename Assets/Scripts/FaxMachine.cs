@@ -36,7 +36,7 @@ public class FaxMachine : MonoBehaviour
                 isFaxing = true; // Prevent the faxing process from repeating
                 
                 // Load next scene
-                SceneManager.LoadScene("EndLevelOne");
+                SceneManager.LoadScene("Main Menu");
             }
         }
     }
