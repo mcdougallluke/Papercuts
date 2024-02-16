@@ -27,10 +27,10 @@ public class GENERIC_GUN : Weapon
 	override public void Attack()
 	{
 		//Calculate bullet direction
-		Vector3 bulletDirectionVec = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+		Vector3 bulletDirectionVec = Camera.main.ScreenToWorldPoint(Input.mousePosition) - barrelTipTransform.position;
 
 		//Create bullet
-		GameObject newBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+		GameObject newBullet = Instantiate(bulletPrefab, barrelTipTransform.position, Quaternion.identity);
 
 		Bullet bulletScript = newBullet.GetComponent<Bullet>();
 
