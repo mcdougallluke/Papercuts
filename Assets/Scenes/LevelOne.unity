@@ -34226,6 +34226,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
   m_PrefabInstance: {fileID: 223666573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &295133545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6625168078355783316, guid: cda7d498f2f476344a223e7955fa93cb, type: 3}
+  m_PrefabInstance: {fileID: 2159656303021175079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &315069792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57243,7 +57248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac6e698ed53857448b936b1be32d0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 295133545}
   paperThreshold: 45
 --- !u!1001 &1697535238
 PrefabInstance:
