@@ -9,7 +9,7 @@ public class ContextSolver : MonoBehaviour
 
     //gozmo parameters
     float[] interestGizmo = new float[0];
-    Vector2 resultDirection = Vector2.zero;
+    Vector2 resultDirection = new Vector2(1, -1).normalized;
     private float rayLength = 2;
 
     private void Start()

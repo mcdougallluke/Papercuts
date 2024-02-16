@@ -30,6 +30,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private ContextSolver movementDirectionSolver;
 
+
     bool following = false;
 
     private void Start()
