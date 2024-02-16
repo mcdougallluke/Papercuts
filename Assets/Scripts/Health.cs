@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField] int currentHealth = 10;
     [SerializeField] int maxHealth = 10;
     private StatusBar healthBar;
+    public HealthBar UIHealthBar;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
@@ -16,6 +17,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         healthBar = GetComponentInChildren<StatusBar>();
+         if (UIHealthBar != null) UIHealthBar.SetMaxHealth(maxHealth);
     }
 
     public void InitializeHealth(int healthValue)
@@ -37,6 +39,9 @@ public class Health : MonoBehaviour
         if (healthBar != null)
         {
             healthBar.UpdateStatusBar(currentHealth, maxHealth);
+        } else
+        {
+            UIHealthBar.SetHealth(currentHealth);
         }
 
         if (currentHealth > 0)
