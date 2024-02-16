@@ -15,6 +15,8 @@ public class Weapon : MonoBehaviour
 
 	public void Awake() 
 	{
+		myGameObject = gameObject;
+		
 		barrelTipPosition = GetComponentInChildren<BulletTipMarker>().transform.position;
 
 		if (barrelTipPosition == null) barrelTipPosition = transform.position;
