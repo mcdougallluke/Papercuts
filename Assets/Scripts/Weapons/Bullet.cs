@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         this.speed = speed;
         this.direction = direction;
         this.clone = clone;
-        this.dmgAmount = dmg;
+        dmgAmount = dmg;
 
         //Assigns texture
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
@@ -45,9 +45,8 @@ public class Bullet : MonoBehaviour
     {
        Vector2 newPosition = direction * speed * Time.deltaTime;
 
+       transform.Translate(newPosition);
 
-
-       this.transform.Translate(newPosition);
        time += Time.deltaTime;
        
         //After 3 seconds destroy bullet

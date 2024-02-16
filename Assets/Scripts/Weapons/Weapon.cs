@@ -5,7 +5,7 @@ public class Weapon : MonoBehaviour
 {
 	public GameObject myGameObject = null;
 	public PlayerController player;
-	protected Vector3 barrelTipPosition;
+	protected Transform barrelTipTransform;
 	public bool isEquipped = false;
 
 	/*
@@ -17,9 +17,9 @@ public class Weapon : MonoBehaviour
 	{
 		myGameObject = gameObject;
 		
-		barrelTipPosition = GetComponentInChildren<BulletTipMarker>().transform.position;
+		barrelTipTransform = GetComponentInChildren<BulletTipMarker>().transform;
 
-		if (barrelTipPosition == null) barrelTipPosition = transform.position;
+		if (barrelTipTransform == null) barrelTipTransform = transform;
 	}
 
 	protected void DetectWeaponPickup()
@@ -48,14 +48,13 @@ public class Weapon : MonoBehaviour
 
 			isEquipped = true;
 		}
-		
 	}
 
 	protected void RotateSelf()
 	{
 		//Rotate sprite to point at cursor
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector3 direction = worldPos - barrelTipPosition;
+		Vector3 direction = worldPos - barrelTipTransform.position;
 		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 	}
