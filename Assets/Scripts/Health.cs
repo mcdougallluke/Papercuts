@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -47,6 +48,11 @@ public class Health : MonoBehaviour
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
             Destroy(gameObject);
+            if (gameObject.tag == "Player") //check if it's the player dying
+            {
+            // reload the level
+            SceneManager.LoadScene("LevelOne[MODIFIED]");
+            }
         }
     }
 
