@@ -555,7 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 68248532}
   - component: {fileID: 68248534}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Modern_Office_Black_Shadow_329
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -707,6 +707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75.659996
@@ -752,6 +756,10 @@ PrefabInstance:
       value: Paper (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -773,6 +781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 74.93532
@@ -816,6 +828,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -909,6 +925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.855484
@@ -954,6 +974,10 @@ PrefabInstance:
       value: Paper (28)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -975,6 +999,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.9006
@@ -1018,6 +1046,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -34361,6 +34393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 106.93282
@@ -34406,6 +34442,10 @@ PrefabInstance:
       value: Paper (33)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -34427,6 +34467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.774574
@@ -34470,6 +34514,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -34563,6 +34611,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.053406
@@ -34608,6 +34660,10 @@ PrefabInstance:
       value: Paper (26)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -34629,6 +34685,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.085655
@@ -34672,6 +34732,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -34765,6 +34829,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.249405
@@ -34808,6 +34876,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -34901,6 +34973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.06934
@@ -34944,6 +35020,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -35037,6 +35117,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.853783
@@ -35080,6 +35164,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -35243,6 +35331,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.906784
@@ -35288,6 +35380,10 @@ PrefabInstance:
       value: Paper (7)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -35309,6 +35405,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 106.99563
@@ -35352,6 +35452,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -35445,6 +35549,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 91.85069
@@ -35488,6 +35596,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -35778,6 +35890,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 72.77383
@@ -35823,6 +35939,10 @@ PrefabInstance:
       value: Paper (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -35844,6 +35964,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.09082
@@ -35889,6 +36013,10 @@ PrefabInstance:
       value: Paper (24)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -35910,6 +36038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.68362
@@ -35955,6 +36087,10 @@ PrefabInstance:
       value: Paper (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -35976,6 +36112,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 93.04471
@@ -36019,6 +36159,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -36117,6 +36261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.078434
@@ -36160,6 +36308,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -36318,6 +36470,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.03651
@@ -36361,6 +36517,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -36454,6 +36614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.24943
@@ -36497,6 +36661,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -36583,9 +36751,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1285036117
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: -1832710597
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -38408,6 +38576,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.09089
@@ -38453,6 +38625,10 @@ PrefabInstance:
       value: Paper (21)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -38474,6 +38650,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.114784
@@ -38519,6 +38699,10 @@ PrefabInstance:
       value: Paper (11)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -38540,6 +38724,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.97692
@@ -38585,6 +38773,10 @@ PrefabInstance:
       value: Paper (27)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -38606,6 +38798,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.98601
@@ -38649,6 +38845,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -38812,6 +39012,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.096594
@@ -38855,6 +39059,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -38940,6 +39148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.67248
@@ -38983,6 +39195,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -39076,7 +39292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882151747}
   - component: {fileID: 882151749}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Modern_Office_Black_Shadow_314
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -39150,6 +39366,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &906112393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5516986679601918440, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
+  m_PrefabInstance: {fileID: 1819504980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &923278678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39228,6 +39449,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.257736
@@ -39273,6 +39498,10 @@ PrefabInstance:
       value: Paper (7)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -39294,6 +39523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.20317
@@ -39339,6 +39572,10 @@ PrefabInstance:
       value: Paper (10)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -39360,6 +39597,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.85183
@@ -39405,6 +39646,10 @@ PrefabInstance:
       value: Paper (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -39426,6 +39671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.90676
@@ -39469,6 +39718,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -39554,6 +39807,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4328574221907282604, guid: eee8fb9fbf780054bb8d5baaf7d2802e, type: 3}
   m_PrefabInstance: {fileID: 1018667163}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1035726661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 906112393}
+    m_Modifications:
+    - target: {fileID: 5966250613403413180, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_Name
+      value: StapleGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
 --- !u!1 &1042330002
 GameObject:
   m_ObjectHideFlags: 0
@@ -39629,6 +39939,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042330002}
   m_CullTransparentMesh: 1
+--- !u!4 &1055813348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+  m_PrefabInstance: {fileID: 1035726661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1073825908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39637,6 +39952,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.21207
@@ -39682,6 +40001,10 @@ PrefabInstance:
       value: Paper (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -39703,6 +40026,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.1989
@@ -39746,6 +40073,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -39960,6 +40291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.01629
@@ -40005,6 +40340,10 @@ PrefabInstance:
       value: Paper (19)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -40026,6 +40365,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.853054
@@ -40069,6 +40412,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -40162,6 +40509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 106.869965
@@ -40207,6 +40558,10 @@ PrefabInstance:
       value: Paper (32)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -40228,6 +40583,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 64.80885
@@ -40271,6 +40630,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -40574,6 +40937,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.698696
@@ -40619,6 +40986,10 @@ PrefabInstance:
       value: Paper (8)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -40640,6 +41011,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 103.09942
@@ -40683,6 +41058,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -40969,6 +41348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.682663
@@ -41014,6 +41397,10 @@ PrefabInstance:
       value: Paper (12)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -41036,7 +41423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1463472844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemies (LEVEL 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41177,6 +41564,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 64.91625
@@ -41222,6 +41613,10 @@ PrefabInstance:
       value: Paper (12)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -41248,7 +41643,7 @@ GameObject:
   - component: {fileID: 1528212651}
   - component: {fileID: 1528212654}
   - component: {fileID: 1528212653}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50817,7 +51212,7 @@ GameObject:
   - component: {fileID: 1548977342}
   - component: {fileID: 1548977341}
   - component: {fileID: 1548977344}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: decor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59077,6 +59472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.745735
@@ -59122,6 +59521,10 @@ PrefabInstance:
       value: Paper (15)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -59143,6 +59546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.988354
@@ -59188,6 +59595,10 @@ PrefabInstance:
       value: Paper (9)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -59209,6 +59620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.28272
@@ -59254,6 +59669,10 @@ PrefabInstance:
       value: Paper (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -59279,7 +59698,7 @@ GameObject:
   - component: {fileID: 1688234120}
   - component: {fileID: 1688234122}
   - component: {fileID: 1688234123}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Fax Machine
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -59494,6 +59913,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.932186
@@ -59539,6 +59962,10 @@ PrefabInstance:
       value: Paper (10)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -59560,6 +59987,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.090866
@@ -59603,6 +60034,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -59766,6 +60201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.946987
@@ -59809,6 +60248,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -59910,18 +60353,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLAYER
       objectReference: {fileID: 0}
-    - target: {fileID: 5616714811646694850, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787125016969610118, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787125016969610118, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5821386885442456886, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.286235
@@ -59964,7 +60395,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5516986679601918440, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1055813348}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
 --- !u!4 &1819504981 stripped
@@ -59996,6 +60430,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.125053
@@ -60041,6 +60479,10 @@ PrefabInstance:
       value: Paper (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -60062,6 +60504,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.629093
@@ -60107,6 +60553,10 @@ PrefabInstance:
       value: Paper (16)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -60128,6 +60578,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.020094
@@ -60171,6 +60625,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -60334,6 +60792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.734177
@@ -60377,6 +60839,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -60651,6 +61117,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.70595
@@ -60696,6 +61166,10 @@ PrefabInstance:
       value: Paper (35)
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
@@ -60717,6 +61191,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.78018
@@ -60760,6 +61238,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -60815,6 +61297,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.99281
@@ -60858,6 +61344,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString
@@ -60951,6 +61441,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 44297400}
     m_Modifications:
+    - target: {fileID: 4525512122290448779, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.95
@@ -60994,6 +61488,10 @@ PrefabInstance:
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_Name
       value: Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782249551096682618, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
       propertyPath: m_TagString

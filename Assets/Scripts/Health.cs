@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
         if (healthBar != null)
         {
             healthBar.UpdateStatusBar(currentHealth, maxHealth);
-        } else
+        } else if (UIHealthBar != null)
         {
             UIHealthBar.SetHealth(currentHealth);
         }
