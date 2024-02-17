@@ -11,7 +11,7 @@ public class AgentWeapon : MonoBehaviour
     protected WeaponRenderer weaponRenderer;
 
     [SerializeField]
-    protected Weapin weapin;
+    protected Weapon weapon;
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class AgentWeapon : MonoBehaviour
     private void AssignWeapon()
     {
         weaponRenderer = GetComponentInChildren<WeaponRenderer>();
-        weapin = GetComponentInChildren<Weapin>();
+        weapon = GetComponentInChildren<Weapon>();
     }
 
     public virtual void AimWeapon(Vector2 pointerPosition)
@@ -43,6 +43,6 @@ public class AgentWeapon : MonoBehaviour
 
     public void Attack()
     {
-        weapin?.UseWeapon();
+        weapon?.UseWeapon();
     }
 }

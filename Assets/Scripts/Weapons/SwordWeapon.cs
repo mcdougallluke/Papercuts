@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class SwordWeapon : Weapin
+public class SwordWeapon : Weapon
 {
     public Animator animator;
     public float delay = 0.3f;

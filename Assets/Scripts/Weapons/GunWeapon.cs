@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GunWeapon : Weapin
+public class GunWeapon : Weapon
 {
     [SerializeField]
     private GameObject muzzle;
