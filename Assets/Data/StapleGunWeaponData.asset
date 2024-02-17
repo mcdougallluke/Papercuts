@@ -18,4 +18,4 @@ MonoBehaviour:
   <WeaponDelay>k__BackingField: 0.1
   <SpreadAngle>k__BackingField: 0
   multiBulletShoot: 0
-  bulletCount: 0
+  bulletCount: 1

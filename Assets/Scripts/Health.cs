@@ -15,12 +15,6 @@ public class Health : MonoBehaviour
 
     [SerializeField]
     private bool isDead = false;
-
-    public void RestartGame()
-    {
-        // Reload the current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
     private void Awake()
     {
         healthBar = GetComponentInChildren<StatusBar>();
@@ -38,8 +32,7 @@ public class Health : MonoBehaviour
     {
         if (isDead)
         {
-            // Activate the game over canvas
-            gameOverCanvas.SetActive(true);
+            if (gameOverCanvas != null) gameOverCanvas.SetActive(true);
         }
         if (sender.layer == gameObject.layer)
             return;
@@ -63,10 +56,10 @@ public class Health : MonoBehaviour
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
             Destroy(gameObject);
-            if (gameObject.tag == "Player") //check if it's the player dying
+
+            if (gameObject.tag == "Player") 
             {
-            // Activate the game over canvas
-            gameOverCanvas.SetActive(true);
+                gameOverCanvas.SetActive(true);
             }
         }
     }
