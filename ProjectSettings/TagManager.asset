@@ -13,15 +13,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
+  - Bullets
+  - Player
   - Enemy
   - SolidObjects
-  - Player Bullets
-  - 
-  - 
-  - 
+  - EnemyMovementCollider
+  - PlayerMovementCollider
   - 
   - 
   - 
@@ -63,4 +63,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 149922233
+    locked: 0
+  - name: Bullets
+    uniqueID: 2252291907
     locked: 0
