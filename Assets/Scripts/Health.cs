@@ -9,11 +9,18 @@ public class Health : MonoBehaviour
     private StatusBar healthBar;
     public HealthBar UIHealthBar;
 
+    public GameObject gameOverCanvas; 
+
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     [SerializeField]
     private bool isDead = false;
 
+    public void RestartGame()
+    {
+        // Reload the current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     private void Awake()
     {
         healthBar = GetComponentInChildren<StatusBar>();
@@ -30,7 +37,10 @@ public class Health : MonoBehaviour
     public void GetHit(int dmgAmount, GameObject sender)
     {
         if (isDead)
-            return;
+        {
+            // Activate the game over canvas
+            gameOverCanvas.SetActive(true);
+        }
         if (sender.layer == gameObject.layer)
             return;
 
@@ -55,8 +65,8 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
             if (gameObject.tag == "Player") //check if it's the player dying
             {
-            // reload the level
-            SceneManager.LoadScene("LevelOne[MODIFIED]");
+            // Activate the game over canvas
+            gameOverCanvas.SetActive(true);
             }
         }
     }
