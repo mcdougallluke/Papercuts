@@ -634,7 +634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 68248532}
   - component: {fileID: 68248534}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Modern_Office_Black_Shadow_329
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -35487,6 +35487,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414846363}
   m_CullTransparentMesh: 1
+--- !u!1 &433034128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433034129}
+  m_Layer: 0
+  m_Name: BOSS WAVE SPAWN POINTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433034129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433034128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 96.94, y: 6.08, z: -7.838984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1047338009}
+  - {fileID: 791085655}
+  - {fileID: 1251040136}
+  - {fileID: 1205230450}
+  - {fileID: 1910247659}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &455984880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39242,6 +39278,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
   m_PrefabInstance: {fileID: 763109456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &791085654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791085655}
+  m_Layer: 0
+  m_Name: Point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &791085655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791085654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.19, y: 2.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433034129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800686714
 GameObject:
   m_ObjectHideFlags: 0
@@ -39803,7 +39870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882151747}
   - component: {fileID: 882151749}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Modern_Office_Black_Shadow_314
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -40450,6 +40517,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042330002}
   m_CullTransparentMesh: 1
+--- !u!1 &1047338008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047338009}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1047338009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047338008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.31, y: 2.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433034129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1055813348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
@@ -40787,6 +40885,7 @@ RectTransform:
   m_Children:
   - {fileID: 638570114}
   - {fileID: 1688287853}
+  - {fileID: 2076787241}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -40942,6 +41041,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
   m_PrefabInstance: {fileID: 1187426985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1205230449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205230450}
+  m_Layer: 0
+  m_Name: Point (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205230450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205230449}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.58, y: 1.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433034129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1237180877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41086,6 +41216,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5884138135521777435, guid: ae0e1b7de00e1bb43b8608812ed17f94, type: 3}
   m_PrefabInstance: {fileID: 1239838938}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1251040135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251040136}
+  m_Layer: 0
+  m_Name: Point (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251040136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251040135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1, y: 2.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433034129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1272492694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60311,7 +60472,7 @@ GameObject:
   - component: {fileID: 1688234120}
   - component: {fileID: 1688234122}
   - component: {fileID: 1688234123}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Fax Machine
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -60410,7 +60571,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1819504982}
+  enemyPrefab: {fileID: 7619514119646614025, guid: eee8fb9fbf780054bb8d5baaf7d2802e, type: 3}
+  numberOfEnemiesToSpawn: 5
+  spawnRadius: 5
+  spawnPoints:
+  - {fileID: 1047338009}
+  - {fileID: 791085655}
+  - {fileID: 1251040136}
+  - {fileID: 1205230450}
+  - {fileID: 1910247659}
   paperThreshold: 45
+  countdownText: {fileID: 2076787244}
 --- !u!1 &1688287852
 GameObject:
   m_ObjectHideFlags: 0
@@ -61484,6 +61655,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4328574221907282604, guid: eee8fb9fbf780054bb8d5baaf7d2802e, type: 3}
   m_PrefabInstance: {fileID: 1906404868}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1910247658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910247659}
+  m_Layer: 0
+  m_Name: Point (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910247659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910247658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.44, y: 1.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433034129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1920708977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61989,6 +62191,101 @@ Transform:
   - {fileID: 36173447}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2076787240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076787241}
+  - component: {fileID: 2076787245}
+  - component: {fileID: 2076787244}
+  - component: {fileID: 2076787242}
+  m_Layer: 5
+  m_Name: Countdown Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2076787241
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076787240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.42498, y: 0.42498, z: 0.42498}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1145802652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 307}
+  m_SizeDelta: {x: 1462.528, y: 147.0542}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2076787242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076787240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 8, y: 8}
+  m_UseGraphicAlpha: 1
+--- !u!114 &2076787244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076787240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fefb0965a1cb69a45b725ae8ca47b5b0, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 273
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Defend the Fax Machine!
+--- !u!222 &2076787245
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076787240}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2091572348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62218,3 +62515,4 @@ SceneRoots:
   - {fileID: 864353920}
   - {fileID: 1145802652}
   - {fileID: 1666806399}
+  - {fileID: 433034129}
