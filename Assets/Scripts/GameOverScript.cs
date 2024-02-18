@@ -7,11 +7,11 @@ public class GameOverScript : MonoBehaviour
 {
     public void RestartButton()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(1);
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
