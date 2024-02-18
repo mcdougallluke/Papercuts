@@ -10,7 +10,7 @@ public class WeaponDataSO : ScriptableObject
     public BulletDataSO BulletData { get; set; }
 
     [field: SerializeField]
-    [field: Range(0, 100)]
+    [field: Range(0, 999)]
     public int AmmoCapacity { get; set; } = 100;
 
     [field: SerializeField]

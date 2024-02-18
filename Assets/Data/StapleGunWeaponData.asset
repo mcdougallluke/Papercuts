@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StapleGunWeaponData
   m_EditorClassIdentifier: 
   <BulletData>k__BackingField: {fileID: 11400000, guid: da254cd8950508d499bdc1abb1496df8, type: 2}
-  <AmmoCapacity>k__BackingField: 100
+  <AmmoCapacity>k__BackingField: 999
   <AutomaticFire>k__BackingField: 0
   <WeaponDelay>k__BackingField: 0.1
   <SpreadAngle>k__BackingField: 0
