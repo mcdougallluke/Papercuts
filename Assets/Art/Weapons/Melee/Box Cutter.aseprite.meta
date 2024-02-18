@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37d44bc9c2064ac40989aac8b09f1ee0
+guid: f34ae10ad38a46f489d82d2984c0739e
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: 4frame-mc
+  - name: Box Cutter
     originalName: 
-    pivot: {x: 0.5, y: -0.5032766}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 256
-      height: 763
-    spriteID: 3aaf36b83c850b448ba13949b6c52283
+      width: 30
+      height: 48
+    spriteID: 599b58b5c4e096f42b56544f604e3e92
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -45474486
-    name: 4frame-mc
+    guid: -75906654
+    name: Box Cutter
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: 4frame-mc
+    - name: Box Cutter
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 384
-        width: 256
-        height: 763
-      spriteId: 3aaf36b83c850b448ba13949b6c52283
+        x: 1
+        y: 0
+        width: 30
+        height: 48
+      spriteId: 599b58b5c4e096f42b56544f604e3e92
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 256, y: 1152}
+  canvasSize: {x: 32, y: 48}
