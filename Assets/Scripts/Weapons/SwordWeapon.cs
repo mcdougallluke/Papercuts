@@ -27,6 +27,7 @@ public class SwordWeapon : Weapon
         if (attackBlocked)
             return;
         animator.SetTrigger("Attack");
+        OnShoot?.Invoke();
         IsAttacking = true;
         attackBlocked = true;
         StartCoroutine(DelayAttack());
