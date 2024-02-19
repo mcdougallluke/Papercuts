@@ -34607,6 +34607,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5616714811646694850, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
   m_PrefabInstance: {fileID: 854464525}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &164313374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3644838892888552151, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
+  m_PrefabInstance: {fileID: 854464525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164313373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbafd81b6c3ef2140b3fbf5494ec6c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &164313381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5821386885442456886, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
@@ -62160,7 +62171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac60fb6e72c6c64f94d8926db83ee9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPickUpScript: {fileID: 0}
+  playerPickUpScript: {fileID: 164313374}
   faxMachineScript: {fileID: 1688234123}
   paperCountText: {fileID: 1928221932}
 --- !u!1001 &1966447970
