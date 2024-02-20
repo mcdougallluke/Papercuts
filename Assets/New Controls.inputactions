@@ -33,9 +33,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "SwitchWeapon",
+                    "name": "Attack2",
                     "type": "Button",
-                    "id": "1c7fa816-0daf-428c-89b9-d069d0076d95",
+                    "id": "aab49e62-2fd7-4ed8-8fa0-0b450a84b125",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -122,12 +122,12 @@
                 },
                 {
                     "name": "",
-                    "id": "3db058b6-1695-4368-9389-6758bf96e34a",
-                    "path": "<Keyboard>/e",
+                    "id": "5dc1e2db-fbd9-4bb7-8151-3a84c9616bfb",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SwitchWeapon",
+                    "action": "Attack2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

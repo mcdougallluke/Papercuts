@@ -20,7 +20,7 @@ public class AgentWeapon : MonoBehaviour
         AssignWeapon();
     }
 
-    private void AssignWeapon()
+    public void AssignWeapon()
     {
         weaponRenderer = GetComponentInChildren<WeaponRenderer>();
         weapon = GetComponentInChildren<Weapon>();
