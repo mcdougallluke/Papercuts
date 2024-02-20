@@ -27,6 +27,7 @@ public class SwordWeapon : Weapon
         if (attackBlocked)
             return;
         animator.SetTrigger("Attack");
+        animator.SetBool("isFlipped", true);
         OnShoot?.Invoke();
         IsAttacking = true;
         attackBlocked = true;

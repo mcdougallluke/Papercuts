@@ -13,6 +13,8 @@ public class AgentWeapon : MonoBehaviour
     [SerializeField]
     protected Weapon weapon;
 
+    public Animator animator;
+
     private void Awake()
     {
         AssignWeapon();
@@ -22,24 +24,30 @@ public class AgentWeapon : MonoBehaviour
     {
         weaponRenderer = GetComponentInChildren<WeaponRenderer>();
         weapon = GetComponentInChildren<Weapon>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     public virtual void AimWeapon(Vector2 pointerPosition)
     {
         var aimDirection = (Vector3)pointerPosition - transform.position;
-        desiredAngle = Mathf.Atan2(aimDirection.y, aimDirection.x)*Mathf.Rad2Deg;
-        AdjustWeaponRendering();
+        desiredAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        AdjustWeaponRendering(pointerPosition);
         transform.rotation = Quaternion.AngleAxis(desiredAngle, Vector3.forward);
     }
 
-    protected void AdjustWeaponRendering()
+
+    public void AdjustWeaponRendering(Vector2 pointerPosition)
     {
         if (weaponRenderer != null)
-        {
-            weaponRenderer.FlipSprite(desiredAngle > 90 || desiredAngle < -90);
-            weaponRenderer.RenderBehindHead(desiredAngle < 180 && desiredAngle > 0);
+        { 
+            bool isPointerLeftOfPlayer = pointerPosition.x < transform.position.x;
+            animator.SetBool("isFlipped", isPointerLeftOfPlayer);
+            weaponRenderer.FlipSprite(isPointerLeftOfPlayer);
+            bool shouldRenderBehindHead = pointerPosition.y > transform.position.y;
+            weaponRenderer.RenderBehindHead(shouldRenderBehindHead);
         }
     }
+
 
     public void Attack()
     {
