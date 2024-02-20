@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponRenderer: {fileID: 0}
   weapon: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &4992833988208851507
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,9 +274,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnAttack:
+  OnAttack1:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4434833717499987671}
+        m_TargetAssemblyTypeName: AgentWeapon, Assembly-CSharp
+        m_MethodName: AssignWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4434833717499987671}
+        m_TargetAssemblyTypeName: AgentWeapon, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnAttack2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4434833717499987671}
+        m_TargetAssemblyTypeName: AgentWeapon, Assembly-CSharp
+        m_MethodName: AssignWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4434833717499987671}
         m_TargetAssemblyTypeName: AgentWeapon, Assembly-CSharp
         m_MethodName: Attack
@@ -289,8 +329,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   movement: {fileID: -9005729344199167388, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
-  attack: {fileID: -4989789961196313019, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
+  attack1: {fileID: -4989789961196313019, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
+  attack2: {fileID: -1989507110261826570, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
   pointerPosition: {fileID: -6071334897037528774, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
+  swordObject: {fileID: 6209052400952813095}
+  stapleGunObject: {fileID: 7994325891409353255}
+  canSwitchWeapon: 1
 --- !u!114 &4690749412696398574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,13 +834,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5966250613403413180, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5231973457413971381}
   m_SourcePrefab: {fileID: 100100000, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
 --- !u!4 &5372058371456547730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
   m_PrefabInstance: {fileID: 4340885480250044571}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7994325891409353255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5966250613403413180, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+  m_PrefabInstance: {fileID: 4340885480250044571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5231973457413971381
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7994325891409353255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4842488656639885495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -854,6 +927,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cddf65ba2bdca44b8a29ac1be78006d, type: 3}
+--- !u!1 &6209052400952813095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520252414537836176, guid: 7cddf65ba2bdca44b8a29ac1be78006d, type: 3}
+  m_PrefabInstance: {fileID: 4842488656639885495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8405570926023236213 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4005230581202180802, guid: 7cddf65ba2bdca44b8a29ac1be78006d, type: 3}
