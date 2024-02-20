@@ -12,18 +12,33 @@ public class GunWeapon : Weapon
     [SerializeField]
     private WeaponDataSO weaponData;
 
+    public bool AmmoFull { get => Ammo >= weaponData.AmmoCapacity; }
+
     private bool isShooting = false;
     private bool reloadCoroutine = false;
+
+    [SerializeField]
+    private UIAmmo uiAmmo = null;
+
+    public void AddAmmo(int amount)
+    {
+        Ammo += amount;
+    }
 
     public int Ammo
     {
         get { return ammo; }
-        set { ammo = Mathf.Clamp(value, 0, weaponData.AmmoCapacity); }
+        set { 
+            ammo = Mathf.Clamp(value, 0, weaponData.AmmoCapacity);
+            OnAmmoChange?.Invoke(ammo);
+        }
     }
 
     protected void Start()
     {
         Ammo = weaponData.AmmoCapacity;
+        OnAmmoChange.AddListener(uiAmmo.UpdateBulletsText);
+        uiAmmo.UpdateBulletsText(Ammo);
     }
 
     public override void UseWeapon()

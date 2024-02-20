@@ -7,7 +7,8 @@ public class AnimationEventHelper : MonoBehaviour
 {
     public UnityEvent OnAnimationEventTriggered, OnAttackPerformed;
 
-    private PlayerInput playerInput;
+    [SerializeField]
+    public PlayerInput playerInput;
 
     private void Awake()
     {
