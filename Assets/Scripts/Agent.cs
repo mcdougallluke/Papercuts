@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Agent : MonoBehaviour
 {
@@ -20,7 +19,7 @@ public class Agent : MonoBehaviour
     private void Update()
     {
         agentMover.MovementInput = MovementInput;
-        weaponParent.PointerPosition = pointerInput;
+        if (weaponParent != null) weaponParent.PointerPosition = pointerInput;
         AnimateCharacter();
     }
 

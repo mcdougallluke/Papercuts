@@ -1,20 +1,24 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] int currentHealth = 10;
     [SerializeField] int maxHealth = 10;
     private StatusBar healthBar;
+    public HealthBar UIHealthBar;
+
+    public GameObject gameOverCanvas; 
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     [SerializeField]
     private bool isDead = false;
-
     private void Awake()
     {
         healthBar = GetComponentInChildren<StatusBar>();
+         if (UIHealthBar != null) UIHealthBar.SetMaxHealth(maxHealth);
     }
 
     public void InitializeHealth(int healthValue)
@@ -27,7 +31,9 @@ public class Health : MonoBehaviour
     public void GetHit(int dmgAmount, GameObject sender)
     {
         if (isDead)
-            return;
+        {
+            if (gameOverCanvas != null) gameOverCanvas.SetActive(true);
+        }
         if (sender.layer == gameObject.layer)
             return;
 
@@ -36,6 +42,9 @@ public class Health : MonoBehaviour
         if (healthBar != null)
         {
             healthBar.UpdateStatusBar(currentHealth, maxHealth);
+        } else if (UIHealthBar != null)
+        {
+            UIHealthBar.SetHealth(currentHealth);
         }
 
         if (currentHealth > 0)
@@ -47,6 +56,11 @@ public class Health : MonoBehaviour
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
             Destroy(gameObject);
+
+            if (gameObject.tag == "Player") 
+            {
+                gameOverCanvas.SetActive(true);
+            }
         }
     }
 
