@@ -40491,6 +40491,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 142226459}
     - target: {fileID: 3644838892888552151, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
+      propertyPath: ammoUI
+      value: 
+      objectReference: {fileID: 142226459}
+    - target: {fileID: 3644838892888552151, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
       propertyPath: playerGun
       value: 
       objectReference: {fileID: 236389919}

@@ -9,8 +9,12 @@ public class AutoProximityPickUp : MonoBehaviour
 	public LayerMask whatIsHealth;
 	public LayerMask whatIsAmmo;
 
-	public Health playerHealth;
-	public GunWeapon playerGun;
+	[SerializeField]
+	private Health playerHealth;
+	[SerializeField]
+	private GunWeapon playerGun;
+	[SerializeField]
+	private UIAmmo ammoUI;
 
 	public int paperCount { get; private set; } = 0;
 
@@ -57,6 +61,7 @@ public class AutoProximityPickUp : MonoBehaviour
 
 			ammo.SetActive(false);
 			playerGun.ammo += 5;
+			ammoUI?.UpdateBulletsText(playerGun.ammo);
 			OnPickup?.Invoke();
 		}
 	}
