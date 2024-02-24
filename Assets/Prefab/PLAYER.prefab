@@ -370,7 +370,31 @@ MonoBehaviour:
   gameOverCanvas: {fileID: 0}
   OnHitWithReference:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8343386661074916408}
+        m_TargetAssemblyTypeName: DamageEffect, Assembly-CSharp
+        m_MethodName: TriggerDamageEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6567387556059972048}
+        m_TargetAssemblyTypeName: PlayerAudio, Assembly-CSharp
+        m_MethodName: PlayHitSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDeathWithReference:
     m_PersistentCalls:
       m_Calls: []
@@ -397,8 +421,9 @@ MonoBehaviour:
   whatIsAmmo:
     serializedVersion: 2
     m_Bits: 1
-  playerHealth: {fileID: 0}
-  playerGun: {fileID: 0}
+  playerHealth: {fileID: 1070669807541209153}
+  playerGun: {fileID: 2829930851880103419}
+  ammoUI: {fileID: 0}
   <OnPickup>k__BackingField:
     m_PersistentCalls:
       m_Calls:
@@ -557,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pitchRandomness: 0.05
   pickUpPaperClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+  takeDamageClip: {fileID: 8300000, guid: 8db60394baa27e142b10a76462e660dd, type: 3}
 --- !u!1 &7510248506184980410
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +597,7 @@ GameObject:
   - component: {fileID: 4640636843161187725}
   - component: {fileID: 8526579018676187114}
   - component: {fileID: 2663017061822259103}
+  - component: {fileID: 8343386661074916408}
   m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
@@ -788,6 +815,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pitchRandomness: 0.05
   stepClip: {fileID: 0}
+--- !u!114 &8343386661074916408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510248506184980410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0597320ef38ac1945a1fe33b805f5958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickerDuration: 1
+  flickerSpeed: 0.1
 --- !u!1001 &4340885480250044571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -848,6 +889,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5231973457413971381}
   m_SourcePrefab: {fileID: 100100000, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+--- !u!114 &2829930851880103419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1979335634771189088, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
+  m_PrefabInstance: {fileID: 4340885480250044571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7994325891409353255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5ffbb28e087374fbee6fae25f617cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5372058371456547730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8552492889179998985, guid: 17d60e1e2cacac14ab575a1eb0f6b685, type: 3}
