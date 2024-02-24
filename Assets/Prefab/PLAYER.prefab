@@ -393,7 +393,12 @@ MonoBehaviour:
     m_Bits: 1
   whatIsHealth:
     serializedVersion: 2
-    m_Bits: 129
+    m_Bits: 1
+  whatIsAmmo:
+    serializedVersion: 2
+    m_Bits: 1
+  playerHealth: {fileID: 0}
+  playerGun: {fileID: 0}
   <OnPickup>k__BackingField:
     m_PersistentCalls:
       m_Calls:

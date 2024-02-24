@@ -7,7 +7,7 @@ public class GunWeapon : Weapon
     private GameObject muzzle;
 
     [SerializeField]
-    private int ammo;
+    public int ammo;
 
     [SerializeField]
     private WeaponDataSO weaponData;

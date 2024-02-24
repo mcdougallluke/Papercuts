@@ -4,9 +4,14 @@ using UnityEngine.Events;
 public class AutoProximityPickUp : MonoBehaviour
 {
 	public float pickUpRadius = 1.75f;
+
 	public LayerMask whatIsPaper;
 	public LayerMask whatIsHealth;
+	public LayerMask whatIsAmmo;
+
 	public Health playerHealth;
+	public GunWeapon playerGun;
+
 	public int paperCount { get; private set; } = 0;
 
 	[field: SerializeField]
@@ -17,6 +22,7 @@ public class AutoProximityPickUp : MonoBehaviour
 		// Automatically pick up the closest paper within pick-up radius
 		Collider2D[] collidedPapers = Physics2D.OverlapCircleAll(transform.position, pickUpRadius, whatIsPaper);
 		Collider2D[] collidedHealth = Physics2D.OverlapCircleAll(transform.position, pickUpRadius - 0.25f, whatIsHealth);
+		Collider2D[] collidedAmmo = Physics2D.OverlapCircleAll(transform.position, pickUpRadius - 0.25f, whatIsAmmo);
 
 		if (collidedPapers.Length > 0)
 		{
@@ -32,6 +38,26 @@ public class AutoProximityPickUp : MonoBehaviour
 			{
 				PickUpHealth(collider.gameObject);
 			}
+		}
+
+		if (collidedAmmo.Length > 0)
+		{
+			foreach (var collider in collidedAmmo)
+			{
+				PickUpAmmo(collider.gameObject);
+			}
+		}
+	}
+
+	void PickUpAmmo(GameObject ammo)
+	{
+		if (ammo != null && ammo.CompareTag("Ammo"))
+		{
+			if (playerGun.AmmoFull) return;
+
+			ammo.SetActive(false);
+			playerGun.ammo += 5;
+			OnPickup?.Invoke();
 		}
 	}
 
