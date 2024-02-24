@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int currentHealth = 10;
-    [SerializeField] int maxHealth = 10;
+    public int currentHealth = 10;
+    public int maxHealth = 10;
     private StatusBar healthBar;
     public HealthBar UIHealthBar;
 
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
         {
             if (gameOverCanvas != null) gameOverCanvas.SetActive(true);
         }
-        if (sender.layer == gameObject.layer)
+        if (!sender.CompareTag("Health") && sender.layer == gameObject.layer)
             return;
 
         currentHealth = Mathf.Clamp(currentHealth - dmgAmount, 0, maxHealth);

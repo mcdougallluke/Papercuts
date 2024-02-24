@@ -390,6 +390,9 @@ MonoBehaviour:
   whatIsPaper:
     serializedVersion: 2
     m_Bits: 1
+  whatIsHealth:
+    serializedVersion: 2
+    m_Bits: 129
   <OnPickup>k__BackingField:
     m_PersistentCalls:
       m_Calls:
