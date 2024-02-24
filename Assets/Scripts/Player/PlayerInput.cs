@@ -9,13 +9,19 @@ public class PlayerInput : MonoBehaviour
     public UnityEvent OnAttack1, OnAttack2;
 
     [SerializeField]
-    private InputActionReference movement, attack1, attack2, pointerPosition; 
+    private InputActionReference movement, attack1, attack2, pointerPosition;
 
     [SerializeField]
     private GameObject swordObject, stapleGunObject;
 
+    [SerializeField]
+    private float gunAttackCooldown = 0.5f;
+
     public bool canSwitchWeapon = true;
 
+    private float lastGunAttackTime = -1;
+
+    
     private void Awake()
     {
         swordObject.SetActive(true);
@@ -48,14 +54,12 @@ public class PlayerInput : MonoBehaviour
 
     private void OnEnable()
     {
-       
         attack1.action.performed += PerformAttack1;
         attack2.action.performed += PerformAttack2;
     }
 
     private void OnDisable()
     {
-        
         attack1.action.performed -= PerformAttack1;
         attack2.action.performed -= PerformAttack2;
     }
@@ -70,9 +74,15 @@ public class PlayerInput : MonoBehaviour
 
     private void PerformAttack2(InputAction.CallbackContext obj)
     {
-        if (!canSwitchWeapon) return;
+        if (!canSwitchWeapon || !CanGunAttack()) return;
         stapleGunObject.SetActive(true);
         swordObject.SetActive(false);
+        lastGunAttackTime = Time.time; 
         OnAttack2?.Invoke();
+    }
+
+    private bool CanGunAttack()
+    {
+        return Time.time >= lastGunAttackTime + gunAttackCooldown;
     }
 }

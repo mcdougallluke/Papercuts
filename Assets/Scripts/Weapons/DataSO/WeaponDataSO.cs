@@ -17,8 +17,8 @@ public class WeaponDataSO : ScriptableObject
     public bool AutomaticFire { get; set; } = false;
 
     [field: SerializeField]
-    [field: Range(0.1f, 2f)]
-    public float WeaponDelay { get; set; } = 0.1f;
+    [field: Range(0f, 2f)]
+    public float WeaponDelay { get; set; } = 0f;
 
     [field: SerializeField]
     [field: Range(0f, 10f)]
