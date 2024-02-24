@@ -14,11 +14,14 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     private GameObject swordObject, stapleGunObject;
 
+    [SerializeField]
+    private float gunAttackCooldown = 0.5f;
+
     public bool canSwitchWeapon = true;
 
-    private float lastGunAttackTime = -1; // Timestamp of the last gun (Attack2) shot
-    private float gunAttackCooldown = 1f; // Cooldown duration in seconds for the gun (Attack2)
+    private float lastGunAttackTime = -1;
 
+    
     private void Awake()
     {
         swordObject.SetActive(true);
@@ -63,7 +66,7 @@ public class PlayerInput : MonoBehaviour
 
     private void PerformAttack1(InputAction.CallbackContext obj)
     {
-        if (!canSwitchWeapon) return; // No cooldown for the sword attack
+        if (!canSwitchWeapon) return;
         swordObject.SetActive(true);
         stapleGunObject.SetActive(false);
         OnAttack1?.Invoke();
@@ -71,16 +74,15 @@ public class PlayerInput : MonoBehaviour
 
     private void PerformAttack2(InputAction.CallbackContext obj)
     {
-        if (!canSwitchWeapon || !CanGunAttack()) return; // Check if gun attack is allowed based on cooldown
+        if (!canSwitchWeapon || !CanGunAttack()) return;
         stapleGunObject.SetActive(true);
         swordObject.SetActive(false);
-        lastGunAttackTime = Time.time; // Update last gun attack time
+        lastGunAttackTime = Time.time; 
         OnAttack2?.Invoke();
     }
 
     private bool CanGunAttack()
     {
-        // Cooldown check is specifically for the gun (Attack2)
         return Time.time >= lastGunAttackTime + gunAttackCooldown;
     }
 }

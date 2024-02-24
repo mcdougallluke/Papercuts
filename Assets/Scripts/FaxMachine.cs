@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,8 @@ public class FaxMachine : MonoBehaviour
 
     public float spawnRadius = 5f;
     private bool enemiesSpawned = false;
+    private bool showEnemyWarning = false;
+
     public Transform[] spawnPoints;
 
     [SerializeField]
@@ -31,30 +34,34 @@ public class FaxMachine : MonoBehaviour
 
     void Update()
     {
-        // Check if player is close enough and has more than x papers
         if (isPlayerClose && playerScript.paperCount >= paperThreshold && !isFaxing)
         {
             countdown -= Time.deltaTime;
-            countdownText.text = "Defend the Fax Machine!\n" + countdown.ToString("F2"); // Formats the float to show only two decimal places
+
+            // Only update countdownText with countdown if showEnemyWarning is false
+            if (!showEnemyWarning)
+            {
+                countdownText.text = "Defend the Fax Machine!\n" + countdown.ToString("F2");
+            }
 
             if (!enemiesSpawned)
             {
-                SpawnEnemyAroundFaxMachine();
+                enemiesSpawned = true; // Prevents coroutine from being called more than once
+                StartCoroutine(PrepareAndSpawnEnemies());
             }
-            enemiesSpawned = true;
 
             if (countdown <= 0)
             {
                 Debug.Log("Faxing complete!");
                 isFaxing = true;
-
-                // Load Win Scene
                 SceneManager.LoadScene("Main Menu");
             }
         }
         else
         {
-            countdownText.text = ""; // Hide the timer when not in use
+            // Reset text and flag when conditions are not met
+            countdownText.text = "";
+            showEnemyWarning = false;
         }
     }
 
@@ -78,6 +85,19 @@ public class FaxMachine : MonoBehaviour
         }
     }
 
+    IEnumerator PrepareAndSpawnEnemies()
+    {
+        // Temporarily prevent the normal countdown message from showing
+        showEnemyWarning = true;
+        countdownText.text = "Enemies are coming, Defend the Fax Machine!";
+        yield return new WaitForSeconds(3); // Show the message for 3 seconds
+
+        SpawnEnemyAroundFaxMachine();
+
+        // After spawning enemies, allow the countdown message to resume
+        showEnemyWarning = false;
+    }
+
     void SpawnEnemyAroundFaxMachine()
     {
         foreach (Transform spawnPoint in spawnPoints)
@@ -86,4 +106,3 @@ public class FaxMachine : MonoBehaviour
         }
     }
 }
-

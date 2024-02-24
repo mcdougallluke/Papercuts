@@ -334,6 +334,7 @@ MonoBehaviour:
   pointerPosition: {fileID: -6071334897037528774, guid: 0bab105b655eb5b4ab72a107602fbbf2, type: 3}
   swordObject: {fileID: 6209052400952813095}
   stapleGunObject: {fileID: 7994325891409353255}
+  gunAttackCooldown: 0.5
   canSwitchWeapon: 1
 --- !u!114 &4690749412696398574
 MonoBehaviour:
