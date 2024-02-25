@@ -34628,7 +34628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 20
 --- !u!222 &142226462
 CanvasRenderer:
   m_ObjectHideFlags: 0
