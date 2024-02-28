@@ -43557,6 +43557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1220728969}
+  playlistAudioPlayer: {fileID: 2061137116}
 --- !u!114 &1457338444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63913,9 +63914,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.07
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

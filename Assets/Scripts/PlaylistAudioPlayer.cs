@@ -25,7 +25,7 @@ public class PlaylistAudioPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (!audioSource.isPlaying)
+        if (!audioSource.isPlaying && !PauseMenu.GameIsPaused)
         {
             PlayNextTrack();
         }
