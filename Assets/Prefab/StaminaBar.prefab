@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4935152953956741029}
   - component: {fileID: 1435920986304230991}
   - component: {fileID: 6276505918487764769}
-  - component: {fileID: -6236595847095272058}
+  - component: {fileID: 1635155759510570704}
   m_Layer: 0
   m_Name: StaminaBar
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &-6236595847095272058
+--- !u!114 &1635155759510570704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,8 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8347e89a29bbb9a479a08dd50c3908bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  type: 0
+  type: 1
 --- !u!1 &1760875449814042882
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +201,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8013880765399788616}
   - component: {fileID: 1745493472465317668}
-  - component: {fileID: 7448453487793248116}
   m_Layer: 0
   m_Name: StaminaSlider
   m_TagString: Untagged
@@ -282,20 +280,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7448453487793248116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2222641003379603181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8347e89a29bbb9a479a08dd50c3908bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1745493472465317668}
-  type: 1
 --- !u!1 &7517568768634022967
 GameObject:
   m_ObjectHideFlags: 0

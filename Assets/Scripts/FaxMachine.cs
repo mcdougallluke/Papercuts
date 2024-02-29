@@ -1,43 +1,67 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class FaxMachine : MonoBehaviour
 {
-    public GameObject player; // Assign this in the Inspector
+    public GameObject player;
     private AutoProximityPickUp playerScript;
     private bool isPlayerClose = false;
-    private float countdown = 12f; // 12 second countdown
-    private float resetCountDown = 12f;
+    private float countdown = 15f;
+    private float resetCountDown = 15f;
     private bool isFaxing = false;
+
+    [SerializeField]
+    public GameObject enemyPrefab;
+
+    public float spawnRadius = 5f;
+    private bool enemiesSpawned = false;
+    private bool showEnemyWarning = false;
+
+    public Transform[] spawnPoints;
 
     [SerializeField]
     public int paperThreshold = 45;
 
+    [SerializeField]
+    public Text countdownText;
+
     void Start()
     {
-        playerScript = player.GetComponent<AutoProximityPickUp>(); // Get script that has the paper count
+        playerScript = player.GetComponent<AutoProximityPickUp>();
     }
 
     void Update()
     {
-        //Debug.Log($"Paper Count: {playerScript.paperCount}, Threshold: {paperThreshold}");
-        //Debug.Log("Time Remaining: " + countdown);
-
-        // Check if player is close enough and has more than x papers
-        if (isPlayerClose && playerScript.paperCount > paperThreshold && !isFaxing)
+        if (isPlayerClose && playerScript.paperCount >= paperThreshold && !isFaxing)
         {
-            // Start the countdown
             countdown -= Time.deltaTime;
-            Debug.Log("Time Remaining: " + countdown);
+
+            // Only update countdownText with countdown if showEnemyWarning is false
+            if (!showEnemyWarning)
+            {
+                countdownText.text = "Defend the Fax Machine!\n" + countdown.ToString("F2");
+            }
+
+            if (!enemiesSpawned)
+            {
+                enemiesSpawned = true; // Prevents coroutine from being called more than once
+                StartCoroutine(PrepareAndSpawnEnemies());
+            }
+
             if (countdown <= 0)
             {
-                // Complete the faxing process
                 Debug.Log("Faxing complete!");
-                isFaxing = true; // Prevent the faxing process from repeating
-                
-                // Load next scene
-                SceneManager.LoadScene("EndLevelOne");
+                isFaxing = true;
+                SceneManager.LoadScene("Main Menu");
             }
+        }
+        else
+        {
+            // Reset text and flag when conditions are not met
+            countdownText.text = "";
+            showEnemyWarning = false;
         }
     }
 
@@ -56,9 +80,29 @@ public class FaxMachine : MonoBehaviour
         {
             Debug.Log("Player NOT in Range");
             isPlayerClose = false;
-            countdown = resetCountDown; // Reset the countdown when the player leaves
-            isFaxing = false; // Allow faxing again if the player comes back
+            countdown = resetCountDown;
+            isFaxing = false;
+        }
+    }
+
+    IEnumerator PrepareAndSpawnEnemies()
+    {
+        // Temporarily prevent the normal countdown message from showing
+        showEnemyWarning = true;
+        countdownText.text = "Enemies are coming, Defend the Fax Machine!";
+        yield return new WaitForSeconds(3); // Show the message for 3 seconds
+
+        SpawnEnemyAroundFaxMachine();
+
+        // After spawning enemies, allow the countdown message to resume
+        showEnemyWarning = false;
+    }
+
+    void SpawnEnemyAroundFaxMachine()
+    {
+        foreach (Transform spawnPoint in spawnPoints)
+        {
+            Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         }
     }
 }
-
