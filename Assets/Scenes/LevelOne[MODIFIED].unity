@@ -745,7 +745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 68248532}
   - component: {fileID: 68248534}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: Modern_Office_Black_Shadow_329
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -40874,7 +40874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882151747}
   - component: {fileID: 882151749}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: Modern_Office_Black_Shadow_314
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
@@ -61807,7 +61807,7 @@ GameObject:
   - component: {fileID: 1688234120}
   - component: {fileID: 1688234122}
   - component: {fileID: 1688234123}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: Fax Machine
   m_TagString: Fax Machine
   m_Icon: {fileID: 0}
