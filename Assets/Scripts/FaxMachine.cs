@@ -99,7 +99,14 @@ public class FaxMachine : MonoBehaviour
 
         // After spawning enemies, allow the countdown message to resume
         showEnemyWarning = false;
-    }
+
+        for(int i = 0; i < 2; i++)
+        {
+			yield return new WaitForSeconds(3.75f);
+			SpawnEnemyAroundFaxMachine();
+		}
+
+	}
 
     void SpawnEnemyAroundFaxMachine()
     {
