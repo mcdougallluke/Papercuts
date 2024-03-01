@@ -13,6 +13,9 @@ public class FaxMachine : MonoBehaviour
     private bool isFaxing = false;
 
     [SerializeField]
+    public string nextScene;
+
+    [SerializeField]
     public GameObject enemyPrefab;
 
     public float spawnRadius = 5f;
@@ -54,7 +57,7 @@ public class FaxMachine : MonoBehaviour
             {
                 Debug.Log("Faxing complete!");
                 isFaxing = true;
-                SceneManager.LoadScene("Main Menu");
+				SceneManager.LoadScene(nextScene);
             }
         }
         else
@@ -96,12 +99,21 @@ public class FaxMachine : MonoBehaviour
 
         // After spawning enemies, allow the countdown message to resume
         showEnemyWarning = false;
-    }
+
+        for(int i = 0; i < 2; i++)
+        {
+			yield return new WaitForSeconds(3.75f);
+			SpawnEnemyAroundFaxMachine();
+		}
+
+	}
 
     void SpawnEnemyAroundFaxMachine()
     {
         foreach (Transform spawnPoint in spawnPoints)
         {
+            if (spawnPoint == null) continue;
+
             Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         }
     }

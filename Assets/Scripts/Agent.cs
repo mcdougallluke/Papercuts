@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Agent : MonoBehaviour
 {
+    [SerializeField]
     private AgentAnimations agentAnimations;
     private AgentMover agentMover;
 

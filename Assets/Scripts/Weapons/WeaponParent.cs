@@ -50,7 +50,7 @@ public class WeaponParent : MonoBehaviour
         }
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
         if (attackBlocked)
             return;
