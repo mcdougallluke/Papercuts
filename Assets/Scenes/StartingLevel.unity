@@ -420,6 +420,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1070669807541209153, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070669807541209153, guid: b2092d8782fa62e47941a04d8695a781, type: 3}
       propertyPath: UIHealthBar
       value: 
       objectReference: {fileID: 749198528}

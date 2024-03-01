@@ -18,7 +18,8 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         healthBar = GetComponentInChildren<StatusBar>();
-         if (UIHealthBar != null) UIHealthBar.SetMaxHealth(maxHealth);
+        if (UIHealthBar != null) UIHealthBar.SetMaxHealth(maxHealth);
+        UIHealthBar.SetHealth(currentHealth);
     }
 
     public void InitializeHealth(int healthValue)
