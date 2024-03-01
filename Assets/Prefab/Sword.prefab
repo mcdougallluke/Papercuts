@@ -153,6 +153,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  playerInput: {fileID: 0}
 --- !u!114 &6851801071023855242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +195,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   <OnShootNoAmmo>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  <OnAmmoChange>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 7877303367957437071}
