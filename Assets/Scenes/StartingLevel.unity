@@ -5023,6 +5023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1926805408}
     - target: {fileID: 4630210974908369793, guid: 663020703f4130349b8aea9ae883e94a, type: 3}
+      propertyPath: nextScene
+      value: LevelOne[MODIFIED]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630210974908369793, guid: 663020703f4130349b8aea9ae883e94a, type: 3}
       propertyPath: countdownText
       value: 
       objectReference: {fileID: 413484893}
