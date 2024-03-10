@@ -72,7 +72,7 @@ public class AutoProximityPickUp : MonoBehaviour
 		{
 			if (playerHealth.currentHealth == playerHealth.maxHealth) return;
 			health.SetActive(false);
-			playerHealth?.GetHit(-25, health); //Give player more health
+			playerHealth?.GetHit(-2, health); //Give player more health
 			OnPickup?.Invoke();
 		}
 	}
